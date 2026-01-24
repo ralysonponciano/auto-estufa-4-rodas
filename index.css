@@ -1,5 +1,14 @@
 @import url(global.css);
 
-:root{
-    background-color: rgba(124, 120, 120, 0.616);
+.fotos-oficina{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    
+}
+
+#fotos{
+    display: flex;
+    justify-content: flex-start;  
 }

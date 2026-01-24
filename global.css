@@ -1,0 +1,22 @@
+body{
+    background-color: #F0F2F5;
+}
+
+nav a{
+    text-decoration: none;
+}
+nav  {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    border: 0.5px solid;
+    border-radius: 30px;
+    border-color: #D1D5DB;
+    flex-wrap: wrap;
+    
+    
+}
+
+#page{
+justify-content: center;    
+}
