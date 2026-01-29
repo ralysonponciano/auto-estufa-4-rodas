@@ -24,10 +24,6 @@
 }
 
 
-#fotos figcaption{
-    
-
-}
 
 .fotos-oficina {
     width: 100%;
@@ -45,4 +41,31 @@
     /* Como dobramos as fotos, -50% faz o loop ficar invisível */
     transform: translateX(-50%); 
   }
+}
+
+#selo-verde{
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #D1D5DB;
+    max-width: 50%;
+   
+        
+}
+
+
+#selo-verde img{
+ height: 300px;
+ width: 300px;
+ justify-content: flex-end;
+ margin: 12px;
+}
+.titulo-selo{
+    color: rgba(30, 131, 5, 0.767);
+    justify-content: center;
+    display: flex;
+}
+
+.img-selo {
+    display: flex;
+    justify-content: space-between;
 }
