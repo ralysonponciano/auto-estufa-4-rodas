@@ -1,14 +1,48 @@
 @import url(global.css);
 
-.fotos-oficina{
-    display: flex;
-    max-width: 100%;
-    height: 100%;
-    justify-content: flex-start;
+
+#fotos {
+    width: 100%;
+    overflow: hidden; 
     
+    padding: 20px 0;
 }
 
-#fotos{
-    display: flex;
-    justify-content: flex-start;  
+/* 2. A ESTEIRA (O motor que desliza) */
+.esteira {
+    display: flex; /* Coloca os figures um do lado do outro */
+    width: max-content; /* Faz a div ser comprida o suficiente para as 24 fotos */
+    animation: deslizar 40s linear infinite; /* Liga o motor */
+}
+
+
+#fotos figure {
+    margin: 0;
+    padding: 0;
+    width: 300px; 
+    flex-shrink: 0; 
+}
+
+
+#fotos figcaption{
+    
+
+}
+
+.fotos-oficina {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Como dobramos as fotos, -50% faz o loop ficar invisível */
+    transform: translateX(-50%); 
+  }
 }

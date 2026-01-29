@@ -4,6 +4,7 @@ body{
 
 nav a{
     text-decoration: none;
+    
 }
 nav  {
     display: flex;
@@ -17,6 +18,3 @@ nav  {
     
 }
 
-#page{
-justify-content: center;    
-}
