@@ -8,11 +8,11 @@
     padding: 20px 0;
 }
 
-/* 2. A ESTEIRA (O motor que desliza) */
+
 .esteira {
-    display: flex; /* Coloca os figures um do lado do outro */
-    width: max-content; /* Faz a div ser comprida o suficiente para as 24 fotos */
-    animation: deslizar 40s linear infinite; /* Liga o motor */
+    display: flex; 
+    width: max-content; 
+    animation: deslizar 40s linear infinite;  
 }
 
 
@@ -38,7 +38,7 @@
     transform: translateX(0);
   }
   100% {
-    /* Como dobramos as fotos, -50% faz o loop ficar invisível */
+    
     transform: translateX(-50%); 
   }
 }
@@ -48,8 +48,8 @@
     border-radius: 30px;
     border-color: #D1D5DB;
     max-width: 50%;
-   
-        
+   flex-wrap: wrap;
+    overflow: hidden;        
 }
 
 
@@ -58,6 +58,7 @@
  width: 300px;
  justify-content: flex-end;
  margin: 12px;
+    
 }
 .titulo-selo{
     color: rgba(30, 131, 5, 0.767);
@@ -68,4 +69,38 @@
 .img-selo {
     display: flex;
     justify-content: space-between;
+
+}
+
+#selo-verde:hover{
+    border: 2px solid  rgba(30, 131, 5, 0.767);
+    transform: scale(1)
+}
+
+.container-selo-avaliacao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-avaliacao{
+    max-width: 40%;
+
+    border: 0.5px solid;
+    border-radius: 30px;
+    border-color: #D1D5DB;
+    flex-wrap: wrap;
+    margin-right: 35px;
+}
+
+.container-avaliacao h2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-avaliacao:hover{
+    
+    transform:scale(1.1);
+    border-color: #d7d8da;
+
 }
