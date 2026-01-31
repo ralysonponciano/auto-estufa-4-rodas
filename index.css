@@ -12,7 +12,12 @@
 .esteira {
     display: flex; 
     width: max-content; 
-    animation: deslizar 40s linear infinite;  
+    animation: deslizar 80s linear infinite;  
+}
+
+
+.esteira:hover {
+    animation-play-state: paused;
 }
 
 
@@ -21,10 +26,22 @@
     padding: 0;
     width: 300px; 
     flex-shrink: 0; 
+    transition: transform 0.5s ease; 
+    position: relative; 
 }
 
 
+#fotos figure:hover {
+    transform: scale(1.1);  
+    z-index: 10; 
+    cursor: pointer;
+}
 
+.fotos figcaption ul{
+    display: flex;
+    justify-self: flex-start;
+    
+}
 .fotos-oficina {
     width: 100%;
     height: 300px;
@@ -75,7 +92,7 @@
 
 #selo-verde:hover{
     border: 2px solid  rgba(30, 131, 5, 0.767);
-    transform: scale(1)
+    transform: scale(1.01)
 }
 
 .container-selo-avaliacao{
@@ -103,7 +120,7 @@
 
 .container-avaliacao:hover{
     
-    transform:scale(1.1);
+    transform:scale(1.01);
     border-color: #0348d1;
 
 }
@@ -116,7 +133,7 @@
 }
 
 .container-sobre:hover{
-    transform:scale(1);
+    transform:scale(1.01);
     border-color: #0348d1;
 
 }
