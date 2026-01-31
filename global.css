@@ -1,6 +1,7 @@
 #page{
     margin: 24px auto;
-    
+    border: 1px solid #D1D5DB;
+    border-radius: 30px;    
     
 }
 body{
@@ -19,8 +20,41 @@ nav  {
     border-radius: 30px;
     border-color: #D1D5DB;
     flex-wrap: wrap;
+    padding-left: 15px;
     
     
 }
 
 
+.container-botao{
+    
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    z-index:  999; 
+    bottom:  0;
+    right: 0;
+}
+
+.botao-whats img{
+    max-width: 40px;
+    max-height: 30px;
+    padding: 0;
+
+   
+}
+
+.botao-whats{
+    border: 0.5px solid;
+    border-radius: 20px;
+    width: 200px;
+    align-items: center;
+    display: flex;
+    background-color:#25d366 ;
+    text-decoration: none;
+}
+
+.botao-whats:hover{
+    transform:scale(1.1);
+    border-color:#139c45  ;
+}
