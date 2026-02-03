@@ -1,0 +1,22 @@
+footer{
+    
+    border: 1px solid;
+    border-radius: 40px 40px 0 0;
+    background-color:  var(--background-footer);
+    flex-wrap: wrap;
+    
+}
+
+.copy{
+    display: flex;
+    color: var(--color-font-footer);
+    justify-content: center;
+}
+.autor{
+    display: flex;
+    color:var(--color-border);
+    justify-content: flex-start;
+    font-size: 12px;
+    padding: 5px;
+
+}

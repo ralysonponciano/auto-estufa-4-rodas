@@ -1,28 +1,24 @@
+:root{
+
+    --color-selo-ver:rgba(30, 131, 5, 0.767);
+    --color-border:#D1D5DB;
+    --color-botao-whatsapp: #25d366;
+    --color-border-hover:#0348d1;
+    --color-font-footer: #D1D5DB; 
+    --hover-borde-whatsapp:#139c45;
+    --background-footer: #04304d;
+    --background:#F0F2F5;
+}
+
+
 #page{
     margin: 24px auto;
-    border: 1px solid #D1D5DB;
+    border: 1px solid (var(--color-border));
     border-radius: 30px;    
     
 }
 body{
-    background-color: #F0F2F5;
-}
-
-nav a{
-    text-decoration: none;
-    
-}
-nav  {
-    display: flex;
-    text-decoration: none;
-    justify-content: space-around;
-    border: 0.5px solid;
-    border-radius: 30px;
-    border-color: #D1D5DB;
-    flex-wrap: wrap;
-    padding-left: 15px;
-    
-    
+    background-color: var(--background);
 }
 
 
@@ -50,11 +46,12 @@ nav  {
     width: 200px;
     align-items: center;
     display: flex;
-    background-color:#25d366 ;
+    background-color: var(--color-botao-whatsapp) ;
     text-decoration: none;
 }
 
 .botao-whats:hover{
     transform:scale(1.1);
-    border-color:#139c45  ;
+    border-color:  var(--hover-borde-whatsapp)  ;
 }
+

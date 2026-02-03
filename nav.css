@@ -1,0 +1,17 @@
+nav a{
+    text-decoration: none;
+    
+}
+nav  {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    border: 0.5px solid;
+    border-radius: 30px;
+    border-color: var(--color-border);
+    flex-wrap: wrap;
+    padding-left: 15px;
+    
+    
+}
+
