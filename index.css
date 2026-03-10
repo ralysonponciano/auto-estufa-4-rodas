@@ -109,6 +109,31 @@
     margin-right: 35px;
 }
 
+@media (max-width: 768px) {
+    
+    .container-selo-avaliacao {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #selo-verde, 
+    .container-avaliacao {
+        max-width: 95%; 
+        margin: 15px auto; 
+    }
+
+    .img-selo {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #selo-verde img {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto;
+    }
+}
+
 .container-avaliacao h2 {
     display: flex;
     justify-content: center;
