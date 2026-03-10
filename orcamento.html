@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orcamento.css">
+    
+
+    <title>ORÇAMENTOS</title>
+</head>
+<body>
+  <header>
+            <img src="/assets/logotipo-4rodas.png" alt="logotipo com 4 rodas">
+            <nav>
+        
+            <a href="/index.html" >HOME </a>
+            <a href="/orcamento.html">ORÇAMENTOS</a>
+            <a href="./index.html#sobre">SOBRE NÓS</a>
+            <a href="">TRABALHE CONOSCO</a>
+            
+            </nav>
+ </header>
+<main >
+   <div class="container-page">
+    <section class="page"> 
+    
+    <h1>Orçamento Onlline </h1>
+    <p>Insira os dados  abaixo para podermos realizar o orçamento</p>
+    <p><strong> Ressaltamos que é apenas uma previa de orçamento  está sujeito alteração, recomendamos que passe na oficina para uma avaliação detalhada. </strong></p>
+    
+    
+    
+    
+    
+    
+    <div class="container-botao">
+
+    <a class = "botao-whats"href="https://wa.me/5511939077323" target="_blank">
+    <img src="/assets/icones/whatsapp.png" alt=""> Fale com  consultor
+    </a>
+    </div>
+    
+    <form  method="post">
+        
+        <fieldset>
+            <legend>Dados Do Cliente </legend>
+            <div class="container-input-cliente">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="João Silva "
+                required>
+            </div>
+            <div class="container-input-cliente">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Joãosilva@dominio.com.br"
+                required>
+            </div>
+            <div class ="container-input-cliente">
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel"name="tel"
+                placeholder="11 9 4444-1111"
+                required>
+            </div>
+            <div class="container-input-radio">
+                <p>Esse Telefone Possui whatsapp?</p>
+                <input type="radio" name="possui-whats" id="possui-whats-sim" value="sim"><label for="possui-whats-sim">SIM</label>
+                <input type="radio" name="possui-whats" id="possui-whats-nao">
+                <label for="possui-whats-nao">NÃO</label>
+            </div>
+            <div class="input-contato">
+                <p> Qual é a melhor opção para entrarmos em contato?</p>
+                <input type="checkbox" name="entrar-contato" id="whatsapp">
+                <label for="whatsapp">Whastapp</label>
+                <input type="checkbox" name="entrar-contato" id="ligacao">
+                <label for="ligacao">Ligação</label>
+                <input type="radio" name="entrar-contato" id="email-radio">
+                <label for="email-radio">Email</label>
+
+            </div>
+            
+        
+        </fieldset>
+        <fieldset>
+                <legend>Dados do Veiculo</legend>
+                <div class="container-dados-veiculo">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca" name="marca" placeholder="Volkswagem">
+                </div>
+                <div class="container-dados-veiculo">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo" name="modelo"
+                    placeholder="POLO MSI 1.O "
+                    required>
+                </div>
+                 <div class="container-dados-veiculo">
+                    <label for="ano-fabri">Ano Fabricação</label>
+                    <input type="number" name="ano-fabri" id="ano-fabri" min="1950" max="2099" placeholder="2025">
+                </div>
+                
+                <div class="container-dados-veiculo">
+                    <label for="ano-modelo">Ano Modelo</label>
+                    <input type="number" name="ano-modelo" id="ano-modelo" min="1950" max="2099" placeholder="2026">
+                </div>
+                <div class="container-dados-veiculo">
+                    <label for="placa">Placa</label>
+                    <input type="text" id="placa" placeholder="abc-1234 ou abc1f24">
+
+                </div>
+                <div class="container-dados-veiculo">
+                    <label for="cambio">Cambio</label>
+                    <select name="cambio" id="cambio">
+                        <option value="manual">Manual</option>
+                        <option value="automatico">Automatico</option>
+                    </select>
+
+                </div>
+        </fieldset>
+        
+        <div class="container-img" >
+            
+            <h3>Imagens do Veiculo</h3>
+            <p>Insira no minimo duas fotos no padrão abaixo.</p>
+            <div class="form-img">
+            <img src="" alt="figura de um carro">
+            </div>   
+            <input type="file" name="imagens-veiculo" id="imagens-veiculo">
+            </div>
+        <div class="container-text">
+            <textarea name="danos" id="danos" cols="40" rows="10">Descreva os danos ou dúvidas ...</textarea>
+        </div>    
+        <div class="container-botao-orca">
+            <button type="submit">Enviar Orçamento</button>    
+        </div>
+    </form>
+    
+  </section>
+    <aside>
+        <h2>Localização e Contatos</h2>
+        <h3>Endereço</h3>
+        <address>Rua Thales Dos Santos Freire - 1020 , <br> Cep 09751-020 Baeta Neves <br>São Bernardo Do Campo,SP </address>
+        <iframe class ="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.4429524458268!2d-46.54526976114387!3d-23.684117083049802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4246035c5dd7%3A0x9f460edbeb5d6303!2sRua%20Thales%20dos%20Santos%20Freire%2C%201020%20-%20Baeta%20Neves%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009190-710!5e0!3m2!1spt-BR!2sbr!4v1772156864335!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+        <h4>Nossas Redes Socias </h4>
+            <ul>
+                <li><img src="/assets/icones/Instagram_icon-icons.com_66804.svg" alt=""><a href="https://www.instagram.com/autoestufa4rodas/" target="_blank" rel="noopener noreferrer">Siga-nos no Instagram</a></li>
+            </ul>    
+
+        <h4>Contatos</h4>
+        <h5>Ligação</h5>
+        <ul>
+            <li><img src="/assets/icones/phone.svg" alt="icone de telefone indicando Ligação"><a href="tel:+551141257724" ><span>11 4125-7724</span></a></li>
+            <li><a href="tel:+551141257576"><img src="/assets/icones/phone.svg" alt="icone de telefone indicando Ligação">11 4125-7576</a></li>
+        </ul>    
+
+        <h5>Whatsapp</h5>
+        <ul>
+            <li><img src="/assets/icones/whatsapp.png" alt="icone do whatsapp"><a href="https://wa.me/5511939077323">Whatsapp 11 93907-7323</a></li>
+        </ul>
+        <h5>Email</h5>
+        <ul>
+            <li><img src="/assets/icones/email.svg" alt="icone do email indicando o email"><a href="mailto:aestufa4rodas@uol.com.br">aestufa4rodas@uol.com.br</a></li>
+        
+        </ul>
+    </aside>
+    </div>
+</main>
+
+ <footer>
+    <div class="copy">
+    <p> &copy; Auto Estufa Quatro Rodas 2026</p>
+    </div>
+    <div class="autor">
+        <p> Desenvolvido Por Ralyson Ponciano</p>
+    </div>
+</footer>
+
+  
+</body>
+</html>

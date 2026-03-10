@@ -1,0 +1,57 @@
+@import url(global.css);
+@import url(nav.css);
+@import url(footer.css);
+
+.container-page{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-areas: "container-page " "aside";
+    gap: 30px;
+}
+
+
+aside{
+
+    display: grid;
+    border: 1px solid var(--color-border);
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 24px auto;
+    flex-wrap: wrap;
+    
+    overflow: hidden;
+    & .mapa{
+        max-height: 15rem;
+        max-width: 20rem;
+    }
+}
+
+ul{
+    
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ margin-bottom: 5px;
+ list-style: none;
+ & h4,h5{
+    margin: 5px 5px  5px
+
+ }
+ 
+ & a{ 
+    text-decoration: none;
+    color: var(--color-text);
+ }
+ & img{
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 5px;
+    
+ }
+}    
+
+fieldset{
+    border-radius: 30px;
+    margin: 24px auto;
+    border: solid 1px var(--color-border);
+}
