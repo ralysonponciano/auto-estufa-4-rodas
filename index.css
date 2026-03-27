@@ -152,6 +152,7 @@
     border-radius: 30px;
     border-color: var(--color-border);
     margin: 10px 35px;
+    padding: 1rem;
 }
 
 .container-sobre:hover{

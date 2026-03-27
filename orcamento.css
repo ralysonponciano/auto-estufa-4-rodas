@@ -2,12 +2,22 @@
 @import url(nav.css);
 @import url(footer.css);
 
-.container-page{
+
+main {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
-    grid-template-areas: "container-page " "aside";
     gap: 30px;
+    max-width: 1200px; 
+    margin: 24px auto; 
+    padding: 0 15px; 
+      
+    & h1 {
+        display: grid;
+        place-items: center;
+        
+    }
 }
+
 
 
 aside{
@@ -16,13 +26,12 @@ aside{
     border: 1px solid var(--color-border);
     border-radius: 30px;
     padding: 1rem;
-    margin: 24px auto;
     flex-wrap: wrap;
     
     overflow: hidden;
     & .mapa{
-        max-height: 15rem;
-        max-width: 20rem;
+        max-height: 10rem;
+        max-width: 15rem;
     }
 }
 
@@ -54,4 +63,12 @@ fieldset{
     border-radius: 30px;
     margin: 24px auto;
     border: solid 1px var(--color-border);
+}
+
+.container-form-img{
+    display: flex;
+    max-width: 8rem;
+    height: 8rem;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
 }
